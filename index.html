@@ -63,7 +63,7 @@
                                 class="text-[#1DD100]">P Paribahan</span> </h1>
                         <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
                             integrated testing features allow for a streamlined .</p>
-                        <button class="btn bg-[#1DD100] text-xl font-bold">Buy Tickets</button>
+                        <button id="hit-btn" class="btn bg-[#1DD100] text-xl font-bold">Buy Tickets</button>
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@
 
 
     <!-- ticket  -->
-    <section class="bg-[#F7F8F8] mt-5 ml-7 mr-7 border-[3px] border-[#1DD100]  rounded-lg">
+    <section id="ticket-sec" class="bg-[#F7F8F8] mt-5 ml-7 mr-7 border-[3px] border-[#1DD100]  rounded-lg">
         <!-- upper -->
         <div>
             <div class="text-center">
@@ -185,10 +185,11 @@
                 <div class="text-right"> <kbd class="kbd mt-5 "><img src="images/wheel.png" alt=""></kbd></div>
                 <div class=" mt-7 grid grid-cols-5 gap-3">
                     <p>A</p>
-                    <kbd class="kbd">A1</kbd>
-                    <kbd class="kbd">A2</kbd>
-                    <kbd class="kbd">A3</kbd>
-                    <kbd class="kbd">A4</kbd>
+
+                    <kbd onclick="color()" id="a1" class="kbd">A1</kbd> 
+                    <kbd onclick="color()"   id="a2" class="kbd">A2</kbd>
+                    <kbd onclick="color()"   id="a3" class="kbd">A3</kbd>
+                    <kbd onclick="color()"    id="a4"class="kbd">A4</kbd>
                     <p>B</p>
                     <kbd class="kbd">B1</kbd>
                     <kbd class="kbd">B2</kbd>
@@ -303,8 +304,10 @@
 
 
     </footer>
+    <script src="scripts/extra.js"></script>
+    <script src="scripts/button.js">
 
-    
+    </script>
 </body>
 
 </html>
