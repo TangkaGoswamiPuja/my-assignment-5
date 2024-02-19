@@ -169,13 +169,13 @@
 
         <!-- lower -->
 
-        <div class="  mt-5  ml-7 mr-7 bg-[#FFFFFF]  rounded-lg flex justify-evenly p-5 ">
+        <div class="  mt-5  ml-7 mr-7 mb-5 bg-[#FFFFFF]  rounded-lg flex justify-evenly p-5 ">
             <div class=" w-1/2">
                 <p>Select Your Seat</p>
                 <hr>
                 <!-- avaliable -->
                 <div class="flex justify-between mt-3">
-                    <button class="btn  bg-white border-none"><img class=""src="images/seat-gray.png" alt="">
+                    <button class="btn  bg-white border-none"><img class="" src="images/seat-gray.png" alt="">
                         Available</button>
                     <button class="btn text-[#1DD100] bg-white border-none"><img src="images/seat-green.png" alt="">
                         Selected</button>
@@ -185,42 +185,126 @@
                 <div class="text-right"> <kbd class="kbd mt-5 "><img src="images/wheel.png" alt=""></kbd></div>
                 <div class=" mt-7 grid grid-cols-5 gap-3">
                     <p>A</p>
-                   <kbd class="kbd">A1</kbd>
-                   <kbd class="kbd">A2</kbd>
-                   <kbd class="kbd">A3</kbd>
-                   <kbd class="kbd">A4</kbd>
-                   <p>B</p>
-                   <kbd class="kbd">B1</kbd>
-                   <kbd class="kbd">B2</kbd>
-                   <kbd class="kbd">B3</kbd>
-                   <kbd class="kbd">B4</kbd>
+                    <kbd class="kbd">A1</kbd>
+                    <kbd class="kbd">A2</kbd>
+                    <kbd class="kbd">A3</kbd>
+                    <kbd class="kbd">A4</kbd>
+                    <p>B</p>
+                    <kbd class="kbd">B1</kbd>
+                    <kbd class="kbd">B2</kbd>
+                    <kbd class="kbd">B3</kbd>
+                    <kbd class="kbd">B4</kbd>
                 </div>
             </div>
 
             <div><img src="images/info-devider.png" alt=""></div>
             <div>
-                <p>Select Your Seat</p>
+                <div class="bg-[#F7F8F8] p-5 rounded-lg mt-5">
+                    <p>Select Your Seat</p>
+                    <hr>
+                    <div>
+                        <div class="grid grid-cols-3 mt-4">
+                            <p>seat 2</p>
+                            <p>class</p>
+                            <p>price</p>
+                        </div>
+                        <hr>
+                        <div class="grid grid-cols-3 mt-4">
+                            <p>c2</p>
+                            <p>Economy</p>
+                            <p>500</p>
+                        </div>
+                        <div class="grid grid-cols-3 mt-2">
+                            <p>c2</p>
+                            <p>Economy</p>
+                            <p>500</p>
+                        </div>
+                        <hr>
+                        <div class="flex justify-around gap-2 mt-4">
+                            <p>Total price</p>
+                            <p>BDT 1100</p>
+                        </div>
+                        <div class="mt-5">
+                            <label class="input input-bordered flex items-center gap-2">
+                                <input type="text" class="grow" placeholder="Search" />
+                                <div class="flex justify-end"> <button
+                                        class="btn bg-[#1DD100] text-white w-12 h-3">Apply</button></div>
+                            </label>
+                        </div>
+                        <div class="flex justify-around mt-5">
+                            <p>Grand Total </p>
+                            <p>BDT 1100</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- form -->
+                <div>
+                    <label class="form-control w-full max-w-xs">
+                        <div class="label">
+                            <span class="label-text">Passenger Name*</span>
+
+                        </div>
+                        <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+
+                    </label>
+
+                    <label class="form-control w-full max-w-xs">
+                        <div class="label">
+                            <span class="label-text">Phone Number*</span>
+
+                        </div>
+                        <input type="text" placeholder="Enter your phone number"
+                            class="input input-bordered w-full max-w-xs" />
+
+                    </label>
+
+                    <label class="form-control w-full max-w-xs">
+                        <div class="label">
+                            <span class="label-text">Email ID</span>
+
+                        </div>
+                        <input type="text" placeholder="Enter your email id"
+                            class="input input-bordered w-full max-w-xs" />
+
+                    </label>
+                </div>
+
+                <button class="btn mt-5 bg-[#1DD100] w-full">Next</button>
+
+                <div class="flex justify-between">
+                    <a class="underline" href="">Terms and Conditions</a>
+                    <a class="underline" href="">Cancellation Policy</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <footer class="footer grid grid-cols-none grid-rows-none mt-7 p-10  text-neutral-content bg-[#030712] ">
+        <div class=" flex justify-between">
+            <div>
+                <h1 class="text-3xl font-extrabold">DESH-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your <br>daily commuting better.</p>
+            </div>
+            <div>
+                <p>Download our app</p>
+                <div>
+                    <button class="btn text-white bg-[#000000]  ">
+                        <img src="images/playstore.png" alt="">GET IT ON<BR>Google Play</button>
+                </div>
             </div>
         </div>
 
-        <!-- <div class="flex justify-between ">
-            <div>
-         <p>Select Your Seat</p>
-<hr>
-<div class="flex justify-between">
-    <div><img src="images/seat-gray.png" alt="">
-        Available
-    </div>
-    <div>
-       <img src="images/seat-green.png" alt=""> Selected
-    </div>
-                </div>
-                <div>
-    <p>Select Your Seat</p>
-                </div>
-</div>
-        </div> -->
-    </section>
+
+
+    </footer>
+
+    
 </body>
 
 </html>
