@@ -138,7 +138,7 @@
                     </div>
 
                     <button class="btn bg-[#1DD10026]">
-                        <img src="images/seat-green.png" alt="">40 Seats left</button>
+                        <img src="images/seat-green.png" alt=""> <span id="seats-left">8</span>Seats left</button>
                 </div>
                 <!-- route -->
                 <div class="bg-[#F7F8F8] rounded-lg p-5">
@@ -186,15 +186,15 @@
                 <div class=" mt-7 grid grid-cols-5 gap-3">
                     <p>A</p>
 
-                    <kbd onclick="color()" id="a1" class="kbd">A1</kbd> 
-                    <kbd onclick="color()"   id="a2" class="kbd">A2</kbd>
-                    <kbd onclick="color()"   id="a3" class="kbd">A3</kbd>
-                    <kbd onclick="color()"    id="a4"class="kbd">A4</kbd>
+                    <kbd onclick="changeColor('a1')" id="a1" class="kbd">A1</kbd> 
+                    <kbd onclick="changeColor('a2')" id="a2" class="kbd">A2</kbd>
+                    <kbd onclick="changeColor('a3')" id="a3" class="kbd">A3</kbd>
+                    <kbd onclick="changeColor('a4')" id="a4"class="kbd">A4</kbd>
                     <p>B</p>
-                    <kbd class="kbd">B1</kbd>
-                    <kbd class="kbd">B2</kbd>
-                    <kbd class="kbd">B3</kbd>
-                    <kbd class="kbd">B4</kbd>
+                    <kbd onclick="changeColor('b1')" id="b1" class="kbd">B1</kbd>
+                    <kbd onclick="changeColor('b2')" id="b2" class="kbd">B2</kbd>
+                    <kbd onclick="changeColor('b3')" id="b3" class="kbd">B3</kbd>
+                    <kbd onclick="changeColor('b4')" id="b4" class="kbd">B4</kbd>
                 </div>
             </div>
 
@@ -210,15 +210,17 @@
                             <p>price</p>
                         </div>
                         <hr>
-                        <div class="grid grid-cols-3 mt-4">
-                            <p>c2</p>
-                            <p>Economy</p>
-                            <p>500</p>
-                        </div>
-                        <div class="grid grid-cols-3 mt-2">
-                            <p>c2</p>
-                            <p>Economy</p>
-                            <p>500</p>
+                        <div onclick="color()" id="adding-list">
+                            <div class="grid grid-cols-3 mt-4">
+                                <p>A1</p>
+                                <p>Economy</p>
+                                <p>500</p>
+                            </div>
+                            <div class="grid grid-cols-3 mt-2">
+                                <p>A2</p>
+                                <p>Economy</p>
+                                <p>500</p>
+                            </div>
                         </div>
                         <hr>
                         <div class="flex justify-around gap-2 mt-4">

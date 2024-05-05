@@ -7,32 +7,36 @@ getTicketSec.scrollIntoView({behavior:"smooth"})
     })
 
   
-function color()
-{
-    const change =document.getElementById('a1')
-    change.classList.add('bg-[#1DD100]')
-
-    const change1 =document.getElementById('a2')
-    change1.classList.add('bg-[#1DD100]')
-
-    const change2 =document.getElementById('a3')
-    change2.classList.add('bg-[#1DD100]')
-
-
-    const change3 =document.getElementById('a4')
-    change3.classList.add('bg-[#1DD100]')
-
-    const change4 =document.getElementById('b1')
-    change4.classList.add('bg-[#1DD100]')
-
-    const change5 =document.getElementById('b2')
-    change5.classList.add('bg-[#1DD100]')
-
-    const change6 =document.getElementById('b3')
-    change6.classList.add('bg-[#1DD100]')
-
-    const change7 =document.getElementById('b4')
-    change7.classList.add('bg-[#1DD100]')
+// function color()
+// {
     
+//      const showLIst = document.getElementById("adding-list")
+//      showLIst.innerHTML=` <div class="grid grid-cols-3 mt-4">
+//      <p>A3</p>
+//      <p>Economy</p>
+//      <p>500</p>
+//  </div>
+//  <div class="grid grid-cols-3 mt-2">
+//      <p>A4</p>
+//      <p>Economy</p>
+//      <p>500</p>
+//  </div>`
 
-}
+// }
+let selectedSeats = 0;
+ function changeColor(id)
+    { const changeClick =document.getElementById(id)
+        if (!changeClick.classList.contains('bg-[#1DD100]')) {
+            if (selectedSeats >= 4) {
+                alert("You can't select more than 4 seats.");
+                return;
+            }
+            selectedSeats++;
+        } else {
+            selectedSeats--;
+        }
+        changeClick.classList.toggle('bg-[#1DD100]')
+        updateTotalSeats();
+        table()
+    }
+    updateTotalSeats()
