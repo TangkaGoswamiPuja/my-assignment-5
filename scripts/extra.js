@@ -25,7 +25,7 @@ function total(){
         // console.log(newTK)
         const totalAmount = document.getElementById("price","price2")
         totalAmount.innerText = newTK
-        console.log(totalAmount)
+        // console.log(totalAmount)
 }
 function count(){
     add ++
@@ -44,3 +44,21 @@ function grand(){
 function updateTotalSeats() {
     document.getElementById("seats-left").textContent = (8 - selectedSeats);
 }
+
+
+// function next(){
+        
+//         const phnInput = document.getElementById("takePhn" ).value
+
+//   const nextButton = document.getElementById("nextBtn");
+//   const phoneNumber = parseInt(phnInput);
+
+//   if(!isNaN(phoneNumber) && phoneNumber > 0 ){
+//     nextButton.disabled = false;
+//     } else {
+//         nextButton.disabled = true;
+//     }
+//     console.log(phoneNumber, nextButton)
+// }
+
+

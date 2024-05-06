@@ -24,6 +24,8 @@ getTicketSec.scrollIntoView({behavior:"smooth"})
 
 // }
 let selectedSeats = 0;
+// let phnInput = false;
+
 let add = 0;
  let newTK = 0
  let newgrandTK=0
@@ -46,6 +48,61 @@ let add = 0;
         table(catchText)
         total()
         grand()
-             
+     
     }
     updateTotalSeats()
+// function call(){
+//     console.log(next())
+//     modal()
+// }
+
+function next(){
+        
+    const phnInput = document.getElementById("takePhn" ).value
+
+const nextButton = document.getElementById("nextBtn");
+const phoneNumber = parseInt(phnInput);
+
+if(!isNaN(phoneNumber) && phoneNumber > 0 && selectedSeats>0 ){
+
+    
+     alert("plz go next")
+} else {
+
+    alert("plz input number")
+}
+console.log(phoneNumber, nextButton)
+}
+
+function apply(){
+    const coupon = document.getElementById("apply")
+    const take = document.getElementById("search").value
+    const discountElement = document.getElementById("price2");
+    console.log(coupon,take,newgrandTK)
+    if(take==="NEW15" || take==="Couple 20")
+
+    { 
+    coupon.removeAttribute("disabled")
+
+        // alert("Coupon applied successfully!");
+    let discountPercent;
+        if (take === "NEW15") {
+            discountPercent = 0.15
+        } else if (take === "Couple 20") {
+            discountPercent = 0.20
+        }
+        const discountAmount = newgrandTK * discountPercent;
+
+        const discountedPrice = newgrandTK - discountAmount;
+
+        discountElement.textContent = discountedPrice;
+
+    }
+    else{
+        coupon.setAttribute("disabled",false)
+
+        // alert("Please enter a valid coupon code.");
+
+    }
+}
+    
