@@ -7,19 +7,38 @@
 //     changeClick.classList.toggle('bg-[#1DD100]')
 // }
 
-function table(){
+function table(catchText){
     const showLIst = document.getElementById("adding-list")
-        showLIst.innerHTML=` <div class="grid grid-cols-3 mt-4">
-        <p>A3</p>
+    // console.log(showLIst)
+    const div = document.createElement ("div")
+        div.innerHTML=` <div class="grid grid-cols-3 mt-4">
+        <p>${catchText}</p>
         <p>Economy</p>
         <p>500</p>
-    </div>
-    <div class="grid grid-cols-3 mt-2">
-        <p>A4</p>
-        <p>Economy</p>
-        <p>500</p>
-    </div>`
-   
+     </div>
+    `
+   showLIst.appendChild(div)
+ }
+
+function total(){
+    newTK += 500 ;
+        // console.log(newTK)
+        const totalAmount = document.getElementById("price","price2")
+        totalAmount.innerText = newTK
+        console.log(totalAmount)
+}
+function count(){
+    add ++
+    // console.log(add)
+    const totalAdd = document.getElementById("add")
+    totalAdd.innerText = add
+}
+
+function grand(){
+    newgrandTK += 500 ;
+        const totalAmount2 = document.getElementById("price2")
+        totalAmount2.innerText =  newgrandTK
+        // console.log(totalAmount2)
 }
 
 function updateTotalSeats() {

@@ -182,7 +182,7 @@
                 </div>
                 <hr>
                 <!-- key seat -->
-                <div class="text-right"> <kbd class="kbd mt-5 "><img src="images/wheel.png" alt=""></kbd></div>
+                <div class="text-right"> <button class="kbd mt-5 "><img src="images/wheel.png" alt=""></button></div>
                 <div class=" mt-7 grid grid-cols-5 gap-3">
                     <p>A</p>
 
@@ -205,38 +205,34 @@
                     <hr>
                     <div>
                         <div class="grid grid-cols-3 mt-4">
-                            <p>seat 2</p>
+                            <p>seat <span id="add"  onclick=" changeColor()" class="bg-green-400 p-0.5 rounded-full">0</span></p>
                             <p>class</p>
                             <p>price</p>
                         </div>
                         <hr>
-                        <div onclick="color()" id="adding-list">
+                        <div onclick=" changeColor()" id="adding-list">
                             <div class="grid grid-cols-3 mt-4">
-                                <p>A1</p>
-                                <p>Economy</p>
-                                <p>500</p>
+                                
                             </div>
-                            <div class="grid grid-cols-3 mt-2">
-                                <p>A2</p>
-                                <p>Economy</p>
-                                <p>500</p>
-                            </div>
+                           
                         </div>
+
+
                         <hr>
                         <div class="flex justify-around gap-2 mt-4">
                             <p>Total price</p>
-                            <p>BDT 1100</p>
+                            <p>BDT <span id="price">0</span></p>
                         </div>
                         <div class="mt-5">
                             <label class="input input-bordered flex items-center gap-2">
                                 <input type="text" class="grow" placeholder="Search" />
                                 <div class="flex justify-end"> <button
-                                        class="btn bg-[#1DD100] text-white w-12 h-3">Apply</button></div>
+                                        class="btn bg-[#1DD100] text-white w-12 h-3 ">Apply</button></div>
                             </label>
                         </div>
-                        <div class="flex justify-around mt-5">
+                        <div class="flex justify-around mt-5"  onclick=" changeColor()">
                             <p>Grand Total </p>
-                            <p>BDT 1100</p>
+                            <p>BDT <span id="price2" >0</span></p>
                         </div>
                     </div>
                 </div>

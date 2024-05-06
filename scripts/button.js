@@ -24,6 +24,9 @@ getTicketSec.scrollIntoView({behavior:"smooth"})
 
 // }
 let selectedSeats = 0;
+let add = 0;
+ let newTK = 0
+ let newgrandTK=0
  function changeColor(id)
     { const changeClick =document.getElementById(id)
         if (!changeClick.classList.contains('bg-[#1DD100]')) {
@@ -37,6 +40,12 @@ let selectedSeats = 0;
         }
         changeClick.classList.toggle('bg-[#1DD100]')
         updateTotalSeats();
-        table()
+        const catchText = changeClick.innerText
+        // console.log(catchText)
+        count()
+        table(catchText)
+        total()
+        grand()
+             
     }
     updateTotalSeats()
